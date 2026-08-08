@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A One Engineer | Flanges & Pipe Components</title>
+  <meta name="description" content="A One Engineer - MS, CS Blind, Split, Puddle and RF Class 150 Flanges." />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:#10233f;background:#f5f9ff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid #e3edf8}
+    .nav-inner{max-width:1120px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-size:22px;font-weight:800;color:#0759a6}
+    .brand span{color:#13a8e8}
+    .links{display:flex;gap:25px;font-size:14px;font-weight:700}
+    .links a:hover{color:#0879c9}
+    .hero{min-height:78vh;display:flex;align-items:center;background:radial-gradient(circle at 80% 20%,#d9f2ff 0,transparent 35%),linear-gradient(135deg,#edf7ff,#fff)}
+    .hero-inner{max-width:1120px;width:100%;margin:auto;padding:80px 20px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+    .tag{display:inline-block;padding:8px 13px;border-radius:999px;background:#e0f3ff;color:#0668ad;font-size:13px;font-weight:800;margin-bottom:18px}
+    h1{font-size:clamp(42px,7vw,72px);line-height:1.02;letter-spacing:-2px;margin-bottom:20px}
+    h1 span{color:#087dcc}
+    .hero p{max-width:650px;color:#55708d;font-size:18px;margin-bottom:30px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:12px;font-weight:800;transition:.2s}
+    .primary{background:#087dcc;color:white;box-shadow:0 10px 25px rgba(8,125,204,.22)}
+    .primary:hover{transform:translateY(-2px);background:#056caf}
+    .secondary{background:white;color:#0759a6;border:1px solid #cfe2f4}
+    .hero-card{background:linear-gradient(145deg,#0869b3,#0db2e8);border-radius:30px;padding:35px;color:white;box-shadow:0 25px 60px rgba(8,91,153,.22);position:relative;overflow:hidden}
+    .hero-card:after{content:"";position:absolute;width:190px;height:190px;border:25px solid rgba(255,255,255,.15);border-radius:50%;right:-55px;bottom:-55px}
+    .ring{width:190px;height:190px;margin:0 auto 25px;border:25px solid rgba(255,255,255,.9);border-radius:50%;box-shadow:inset 0 0 0 8px rgba(255,255,255,.2)}
+    .hero-card h3{font-size:24px;margin-bottom:7px}
+    .hero-card p{color:#e4f8ff;font-size:14px;margin:0}
+    section{padding:75px 20px}
+    .container{max-width:1120px;margin:auto}
+    .section-head{text-align:center;margin-bottom:40px}
+    .section-head h2{font-size:36px;margin-bottom:8px}
+    .section-head p{color:#6b829b}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .product{background:white;border:1px solid #e1edf8;border-radius:20px;padding:25px;box-shadow:0 12px 30px rgba(24,77,125,.06);transition:.2s}
+    .product:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(24,77,125,.12)}
+    .icon{width:52px;height:52px;border-radius:15px;background:#e7f5ff;color:#087dcc;display:grid;place-items:center;font-size:25px;margin-bottom:17px}
+    .product h3{font-size:20px;margin-bottom:8px}
+    .product p{font-size:14px;color:#66809b}
+    .about{background:white}
+    .about-box{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about h2{font-size:38px;margin-bottom:15px}
+    .about p{color:#607995;margin-bottom:15px}
+    .points{display:grid;gap:12px}
+    .point{padding:15px;border-radius:14px;background:#f2f8fe;border:1px solid #e0edf8;font-weight:700}
+    .contact{background:linear-gradient(135deg,#063d76,#087dcc);color:white}
+    .contact-box{display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .contact h2{font-size:36px}
+    .contact p{color:#d7efff;margin-top:6px}
+    .wa{background:#25d366;color:white;padding:15px 22px;border-radius:12px;font-weight:800;white-space:nowrap}
+    footer{background:#062d55;color:#b9d7ef;text-align:center;padding:22px 15px;font-size:13px}
+    @media(max-width:800px){
+      .links{display:none}
+      .hero-inner,.about-box{grid-template-columns:1fr}
+      .hero{min-height:auto}
+      .hero-inner{padding:65px 20px}
+      .grid{grid-template-columns:1fr 1fr}
+      .contact-box{flex-direction:column;align-items:flex-start}
+    }
+    @media(max-width:520px){
+      .grid{grid-template-columns:1fr}
+      h1{letter-spacing:-1px}
+      section{padding:60px 16px}
+      .nav-inner{padding:14px 16px}
+      .hero-inner{padding:55px 16px}
+      .hero-card{padding:28px}
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">A One <span>Engineer</span></a>
+      <div class="links">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <div>
+        <span class="tag">QUALITY FLANGES & PIPE COMPONENTS</span>
+        <h1>Strong Connections.<br><span>Reliable Flanges.</span></h1>
+        <p>A One Engineer supplies quality mild steel and carbon steel flange solutions for industrial piping and assembly requirements.</p>
+        <div class="buttons">
+          <a class="btn primary" href="https://wa.me/919819023630?text=Hello%20A%20One%20Engineer%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank">💬 Chat on WhatsApp</a>
+          <a class="btn secondary" href="#products">View Products</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="ring"></div>
+        <h3>Industrial Flange Solutions</h3>
+        <p>MS • CS • Split • Puddle • RF Class 150</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="products">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Products</h2>
+        <p>Flange solutions for different piping and assembly needs.</p>
+      </div>
+      <div class="grid">
+        <article class="product">
+          <div class="icon">⚙️</div>
+          <h3>MS Pipe Flanges</h3>
+          <p>Standard mild steel pipe connectors designed for dependable industrial piping assemblies.</p>
+        </article>
+        <article class="product">
+          <div class="icon">◉</div>
+          <h3>CS Blind Flange</h3>
+          <p>Carbon/mild steel solid plates used to close pipe ends securely.</p>
+        </article>
+        <article class="product">
+          <div class="icon">🔧</div>
+          <h3>MS Split Flanges</h3>
+          <p>Divided flange designs for specific installation and assembly requirements.</p>
+        </article>
+        <article class="product">
+          <div class="icon">💧</div>
+          <h3>MS Puddle Flanges</h3>
+          <p>Water-stop flange components used in wall and concrete penetrations.</p>
+        </article>
+        <article class="product">
+          <div class="icon">🔩</div>
+          <h3>RF Class 150 Flanges</h3>
+          <p>Raised-face, pressure-rated mild steel components for suitable piping applications.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-box">
+      <div>
+        <span class="tag">ABOUT US</span>
+        <h2>A One Engineer</h2>
+        <p>We provide flange products for customers looking for practical and reliable pipe connection components.</p>
+        <p>For product availability, sizes, specifications and quotations, contact us directly on WhatsApp.</p>
+      </div>
+      <div class="points">
+        <div class="point">✓ Multiple flange types</div>
+        <div class="point">✓ Industrial applications</div>
+        <div class="point">✓ Quick WhatsApp enquiries</div>
+        <div class="point">✓ Mobile-friendly service</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-box">
+      <div>
+        <h2>Need a flange?</h2>
+        <p>Send your requirement to A One Engineer on WhatsApp.</p>
+      </div>
+      <a class="wa" href="https://wa.me/919819023630?text=Hello%20A%20One%20Engineer%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank">💬 WhatsApp Us</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 A One Engineer. All rights reserved.
+  </footer>
+
+</body>
+</html>
